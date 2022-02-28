@@ -12,14 +12,14 @@
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="javax.persistence.jdbc.user" value="sa"/>
             <property name="javax.persistence.jdbc.password" value=""/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/jpashop"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
             <!-- db방언 ? : 각각의 데이터베이스가 가지고있는 약간 다른 sql문에 맞게 최적화.. -->
             <!-- 옵션 -->
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create" /> <!-- 애플리케이션 로딩시 자동 ddl 스키마 생성여부 -->
+            <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- 애플리케이션 로딩시 자동 ddl 스키마 생성여부 -->
         </properties>
     </persistence-unit>
 </persistence>
