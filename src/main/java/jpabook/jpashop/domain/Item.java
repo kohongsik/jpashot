@@ -2,10 +2,9 @@ package jpabook.jpashop.domain;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -23,5 +22,7 @@ public class Item {
     private int price;
     private int stockQuantity;
 
+    @ManyToMany(mappedBy="itemList")
+    private List<Category> categoryList = new ArrayList<>();
 
 }
